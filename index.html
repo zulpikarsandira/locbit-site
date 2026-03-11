@@ -1,0 +1,894 @@
+1:
+<!DOCTYPE html>
+<!-- Handled by Exflow.site -->
+<html data-wf-page="698adc16be7db696ff725abc" data-wf-site="6981bb947f995e0592acde81" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Locbit — Secure Offline Messaging</title>
+<meta content="Locbit is a revolutionary messaging app that works entirely offline using Bluetooth Low Energy. No internet, no servers, full privacy." name="description"/>
+<meta content="Locbit — Secure Offline Messaging" property="og:title"/>
+<meta content="Communicate without internet using Locbit. Secure, encrypted, and peer-to-peer messaging powered by BLE." property="og:description"/>
+<meta content="images/kmwnfeir.webp" property="og:image"/>
+<meta content="Locbit — Secure Offline Messaging" property="twitter:title"/>
+<meta content="Communicate without internet using Locbit. Secure, encrypted, and peer-to-peer messaging powered by BLE." property="twitter:description"/>
+<meta content="images/kmwnfeir.webp" property="twitter:image"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Webflow" name="generator"/>
+<link href="css/locbit1.webflow.shared.b5e62d2a6.css" rel="stylesheet" type="text/css"/>
+<style>
+    html.w-mod-js:not(.w-mod-ix3) :is([testimonial-slide-card], .overview-heading) {
+      visibility: hidden !important;
+    }
+  
+    
+    
+    
+    
+    
+    </style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect"/>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+<script type="text/javascript">WebFont.load({ google: { families: ["Geist:300,400,500,600,700", "Inter Tight:300,400,500,600,700", "Special Gothic Expanded One:300,400,500,600,700"] } });</script>
+<script type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<link href="images/app-icon.png" rel="apple-touch-icon"/>
+<link href="https://unpkg.com/lenis@1.1.20/dist/lenis.css" rel="stylesheet"/>
+  2:
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+</head>
+<body>
+<div class="page-wrapper">
+<nav class="navbar bg">
+<div class="navbar-container">
+<div class="nav-menu" data-w-id="4d76da2b-f6ff-035e-478c-eb83eb383a03">
+<div class="hamburger-icon" data-animation-type="lottie" data-autoplay="0" data-default-duration="2" data-direction="1" data-duration="0" data-is-ix2-target="1" data-ix2-initial-state="0" data-loop="0" data-renderer="svg" data-src="js/30657.json" data-w-id="4d76da2b-f6ff-035e-478c-eb83eb383a04"></div>
+<div class="font-size-lg">Menu</div>
+</div><a class="brand-logo-wrap w-inline-block" href="index.html" style="position: absolute; left: 50%; transform: translateX(-50%);">
+<div class="brand-name">Locbit</div>
+</a>
+<div class="nav-button-wrap hide-tablet"><a class="primary-button w-nav-brand" data-w-id="f4d32e0f-b727-8d4c-163b-442bd4945293" href="contact.html">
+<div class="button-left">
+<div class="button-text-pill">
+<div class="button-text">Download App</div>
+<div class="button-text">Download App</div>
+</div>
+</div>
+<div class="button-right">
+<div class="button-arrow-pill"><svg class="button-arrow" fill="none" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 24L24 8M24 8H12M24 8V20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg><svg class="button-arrow" fill="none" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 24L24 8M24 8H12M24 8V20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg></div>
+</div>
+</a></div>
+<div class="nav-menu-overlay" data-w-id="4d76da2b-f6ff-035e-478c-eb83eb383a0b">
+<div class="container">
+<div class="nav-grid">
+<div class="nav-right"><a aria-current="page" class="nav-link-block w-inline-block w--current" href="index.html">
+<div class="nav-text-pill _01">
+<div class="nav-link-text">Overview</div>
+<div class="nav-link-text">Overview</div>
+</div>
+<div class="nav-text-pill _01">
+<div class="nav-link-text">Overview</div>
+<div class="nav-link-text">Overview</div>
+</div>
+</a>
+<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="features.html">
+<div class="nav-text-pill _01">
+<div class="nav-link-text">Features</div>
+<div class="nav-link-text">Features</div>
+</div>
+<div class="nav-text-pill _01">
+<div class="nav-link-text">Features</div>
+<div class="nav-link-text">Features</div>
+</div>
+</a>
+<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="security.html">
+<div class="nav-text-pill _02">
+<div class="nav-link-text">Security</div>
+<div class="nav-link-text">Security</div>
+</div>
+<div class="nav-text-pill _02">
+<div class="nav-link-text">Security</div>
+<div class="nav-link-text">Security</div>
+</div>
+</a>
+<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="about.html">
+<div class="nav-text-pill _03">
+<div class="nav-link-text">About</div>
+<div class="nav-link-text">About</div>
+</div>
+<div class="nav-text-pill _03">
+<div class="nav-link-text">About</div>
+<div class="nav-link-text">About</div>
+</div>
+</a>
+<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="work.html">
+<div class="nav-text-pill _04">
+<div class="nav-link-text">Credits</div>
+<div class="nav-link-text">Credits</div>
+</div>
+<div class="nav-text-pill _04">
+<div class="nav-link-text">Credits</div>
+<div class="nav-link-text">Credits</div>
+</div>
+</a>
+<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="service.html">
+<div class="nav-text-pill _05">
+<div class="nav-link-text">Technology</div>
+<div class="nav-link-text">Technology</div>
+</div>
+<div class="nav-text-pill _05">
+<div class="nav-link-text">Technology</div>
+<div class="nav-link-text">Technology</div>
+</div>
+</a>
+<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="blog.html">
+<div class="nav-text-pill _06">
+<div class="nav-link-text">Updates</div>
+<div class="nav-link-text">Updates</div>
+</div>
+<div class="nav-text-pill _06">
+<div class="nav-link-text">Updates</div>
+<div class="nav-link-text">Updates</div>
+</div>
+</a>
+<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="contact.html">
+<div class="nav-text-pill _07">
+<div class="nav-link-text">Contact</div>
+<div class="nav-link-text">Contact</div>
+</div>
+<div class="nav-text-pill _07">
+<div class="nav-link-text">Contact</div>
+<div class="nav-link-text">Contact</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="main">
+<section class="section">
+<div class="spacing-25xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="overview-hero-main">
+<div class="overview-header" data-w-id="b368d7f2-d012-a250-7e64-55da3a2706ea">
+<h1 class="overview-hero-headng" style="-webkit-transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter:blur(7px)">Locbit Secure Offline Messaging</h1>
+<div class="spacing-9xl"></div>
+<div class="max-width-35">
+<p class="paragraph-regular text-align-center" style="filter:blur(7px);-webkit-transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">Communicate anywhere without internet, kuota, or central
+                  servers. Privacy-first messaging powered by Bluetooth Low Energy (BLE).</p>
+</div>
+<div class="spacing-13xl"></div>
+<div class="button-wrap" style="filter:blur(7px);-webkit-transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"><a class="button-v2 w-inline-block" data-wf--primary-button-v2--variant="base" href="#" target="_blank">
+<div class="button-text-pill">
+<div class="button-text">View Source</div>
+<div class="button-text">View Source</div>
+</div>
+<div class="button-arrow-pill-v2"><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/></div>
+</a></div>
+</div>
+<div class="spacing-16xl"></div>
+<div class="w-layout-grid overview-grid">
+<div class="overview-card" data-w-id="6cc1453c-30d0-607d-97f0-1268b4279277" style="opacity:0"><img alt="Locbit About page featuring a creative design agency introduction with two artistic portraits, company story, mission statement, a 4.9 star client review, and impact metrics." class="overview-img" loading="lazy" sizes="(max-width: 604px) 100vw, 604px" src="images/about.webp" srcset="images/about-p-500.webp 500w, images/about.webp 604w"/></div>
+<div class="overview-card" data-w-id="2f18e53f-d13f-953b-0d55-076ef1b53a92" id="w-node-_2f18e53f-d13f-953b-0d55-076ef1b53a92-ff725abc" style="opacity:0">
+<div class="overview-card-shape"></div><img alt="Website homepage for Locbit Creative Design Agency featuring a stylized photo of a woman, bold text 'CREATIVE DESIGN AGENCY,' navigation menu, client logos, and a section about designing with intention showing a person against a blue sky with light streak effects." class="overview-image" loading="lazy" sizes="(max-width: 635px) 100vw, 635px" src="images/home-203.webp" srcset="images/home-203-p-500.webp 500w, images/home-203.webp 635w"/>
+</div>
+<div class="overview-card" data-w-id="0fd391c7-dca4-f302-09a9-58d2ad1542d7" style="opacity:0"><img alt="Website homepage for Locbit creative design agency featuring a profile of a person with digital light swirls, service list including branding and UI/UX, and client logos." class="overview-img" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" src="images/home.webp" srcset="images/home-p-500.webp 500w, images/home-p-800.webp 800w, images/home-p-1080.webp 1080w, images/home-p-1600.webp 1600w, images/home-p-2000.webp 2000w, images/home.webp 2416w"/></div>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="overview-color-shape"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape left"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="overview-about-main">
+<div class="overvew-about-header">
+<div class="left" data-w-id="e2cf3b02-3029-48a7-e45f-bbe9d46fd649" style="opacity:0">
+<div class="badge">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">Revolutionary Messaging</div>
+</div>
+</div>
+<h2 class="overview-heading">Locbit is a revolutionary offline messaging application that works entirely
+                without internet or central servers.</h2>
+</div>
+<div class="spacing-25xl"></div>
+<div class="overview-about-img-block"><img alt="Website homepage of Locbit creative design agency featuring a distorted portrait collage, menu, social icons, and client logos." class="overview-main-img" data-w-id="b9447579-334a-06f7-70ea-c34c91856d64" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" src="images/home-203-20-1-.webp" srcset="images/home-203-20-1-p-500.webp 500w, images/home-203-20-1-p-800.webp 800w, images/home-203-20-1-p-1080.webp 1080w, images/home-203-20-1-.webp 1232w" style="opacity:0"/>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="overview-color-shape"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="incluted-main">
+<div class="section-header">
+<div class="badge">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">Locbit Core Features</div>
+</div>
+<div class="spacing-2xl"></div>
+<h2 class="section-heading">Innovative Offline Connectivity</h2>
+</div>
+<div class="spacing-16xl"></div>
+<div class="incluted-grid">
+<div class="incluted-card"><img alt="Locbit offline encryption feature" class="incluted-card-img" loading="lazy" src="images/slider-2011-20-1-.webp"/>
+<div class="font-size-2xl">Offline Messaging</div>
+</div>
+<div class="incluted-card"><img alt="Locbit military grade security" class="incluted-card-img" loading="lazy" src="images/slider-2010-20-2-.webp"/>
+<div class="font-size-2xl">Military-Grade Security</div>
+</div>
+<div class="incluted-card"><img alt="Locbit auto discovery feature" class="incluted-card-img" loading="lazy" src="images/slider-2011.webp"/>
+<div class="font-size-2xl"><strong>Auto-Discovery</strong></div>
+</div>
+<div class="incluted-card"><img alt="Locbit P2P architecture" class="incluted-card-img" loading="lazy" src="images/slider-2010-20-1-.webp"/>
+<div class="font-size-2xl"><strong>P2P Architecture</strong></div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape left"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="use-case" data-w-id="2b1726f7-7b8e-700a-80fa-4debec85714d">
+<div class="use-case-left" style="-webkit-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter:blur(7px)">
+<div class="badge">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">Absolute Privacy</div>
+</div>
+<h2 class="section-heading left">Engineered for Absolute Privacy</h2>
+<div class="max-width-35">
+<p class="paragraph-regular">Perfect for emergency communications, remote areas, or anyone who demands
+                  zero metadata tracking and full control over their data.</p>
+</div>
+</div>
+<div class="use-case-right" style="filter:blur(7px);-webkit-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">
+<div class="_w-we-do-list-wrap">
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Secure P2P Chat</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Encrypted Protocols</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">BLE Connectivity</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Local Data Storage</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Battery Efficient</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Zero Server Reliance</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="section-header" data-w-id="2fbfb42e-1ed7-4928-23bf-1395fd8ba5ae" style="opacity:0">
+<div class="badge">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">Tech Stack</div>
+</div>
+<div class="spacing-2xl"></div>
+<h2 class="section-heading">Modern Hybrid Architecture</h2>
+</div>
+<div class="spacing-16xl"></div>
+<div class="w-layout-grid all-pages-grid"><a class="all-page-card w-inline-block" href="index.html">
+<div class="card-image-wrap"><img alt="React Native UI" class="all-page-img" loading="lazy" src="images/slider-2011-20-2-.webp"/></div>
+<div class="font-size-2xl">React Native UI</div>
+</a><a class="all-page-card w-inline-block" href="index.html">
+<div class="card-image-wrap"><img alt="Java Native Bridge" class="all-page-img" loading="lazy" src="images/slider-2012.webp"/></div>
+<div class="font-size-2xl">Java Native Bridge</div>
+</a><a class="all-page-card w-inline-block" href="about.html">
+<div class="card-image-wrap"><img alt="Go Core Engine" class="all-page-img" loading="lazy" src="images/slider-2013.webp"/></div>
+<div class="font-size-2xl">Go Core Engine</div>
+</a><a class="all-page-card w-inline-block" href="work.html">
+<div class="card-image-wrap"><img alt="BLE Protocol Stack" class="all-page-img" loading="lazy" src="images/slider-2011-20-3-.webp"/></div>
+<div class="font-size-2xl">BLE Protocol Stack</div>
+</a>
+<div class="all-page-card">
+<div class="w-dyn-list">
+<div class="w-dyn-items" role="list">
+<div class="w-dyn-item" role="listitem"><a class="w-inline-block" href="/work/novapay" id="w-node-_3abada83-03a8-1a22-23dc-76035ee17428-ff725abc">
+<div class="card-image-wrap"><img alt="AES-256 Encryption" class="all-page-img" loading="lazy" src="images/slider-2012-20-1-.webp"/></div>
+<div class="spacing-9xl"></div>
+<div class="font-size-2xl">AES-256 Encryption</div>
+</a></div>
+</div>
+</div>
+</div><a class="all-page-card w-inline-block" href="service.html">
+<div class="card-image-wrap"><img alt="ECDH Key Exchange" class="all-page-img" loading="lazy" src="images/slider-2013-20-1-.webp"/></div>
+<div class="font-size-2xl">ECDH Key Exchange</div>
+</a><a class="all-page-card w-inline-block" href="blog.html">
+<div class="card-image-wrap"><img alt="JSON Local Storage" class="all-page-img" loading="lazy" src="images/slider-2011-20-4-.webp"/></div>
+<div class="font-size-2xl">JSON Storage</div>
+</a>
+<div class="all-page-card">
+<div class="blog-collection-wrap w-dyn-list">
+<div class="blog-collection-list-v2 w-dyn-items" role="list">
+<div class="blog-collecton-item-v2 w-dyn-item" role="listitem"><a class="blog-card-left w-inline-block" href="/post/designing-products-users-actually-enjoy">
+<div class="blog-image-wrap"><img alt="SHA-256 Validation" class="all-page-img" loading="lazy" src="images/slider-2012-20-2-.webp"/></div>
+<div class="spacing-9xl"></div>
+<div class="blog-card-info-block">
+<div class="blog-info-left">
+<div class="font-size-2xl">SHA-256 Hash</div>
+</div>
+</div>
+</a></div>
+</div>
+</div>
+</div><a class="all-page-card w-inline-block" href="contact.html">
+<div class="card-image-wrap"><img alt="Offline P2P Network" class="all-page-img" loading="lazy" src="images/slider-2013-20-2-.webp"/></div>
+<div class="font-size-2xl">P2P Network</div>
+</a>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape left"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="section-header" data-w-id="7b227b0d-ebb1-0e62-b185-500b79c1ef51" style="opacity:0">
+<div class="badge">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">Resources</div>
+</div>
+<div class="spacing-2xl"></div>
+<h2 class="section-heading">App Pages</h2>
+</div>
+<div class="spacing-16xl"></div>
+<div class="w-layout-grid ohter-page-grid"><a class="all-page-card w-inline-block" href="https://locbit1.webflow.io/404">
+<div class="card-image-wrap"><img alt="Locbit 404 page — page not found." class="all-page-img" loading="lazy" src="images/slider-2013-20-3-.webp"/></div>
+<div class="font-size-2xl">404</div>
+</a><a class="all-page-card two w-inline-block" href="admin/style-guide.html">
+<div class="card-image-wrap two"><img alt="Locbit style guide showing color palette and typography." class="all-page-img" loading="lazy" src="images/download-20-1-.webp"/></div>
+<div class="font-size-2xl">Style Guide</div>
+</a><a class="all-page-card w-inline-block" href="admin/license.html">
+<div class="card-image-wrap two"><img alt="Open source licensing information for Locbit." class="all-page-img" loading="lazy" src="images/download-20-3-.webp"/></div>
+<div class="font-size-2xl"><strong>Licensing</strong></div>
+</a><a class="all-page-card w-inline-block" href="admin/changelog.html">
+<div class="card-image-wrap two"><img alt="Locbit changelog — version history and feature updates." class="all-page-img" loading="lazy" src="images/download-20-2-.webp"/></div>
+<div class="font-size-2xl">Change Log</div>
+</a></div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="use-case two" data-w-id="8e5559e5-60c2-e5c3-194a-16e32fe427de">
+<div class="use-case-left" style="-webkit-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);filter:blur(7px)">
+<div class="badge">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">USE CASES</div>
+</div>
+<h2 class="section-heading left">Built for real-world offline scenarios</h2>
+<div class="max-width-35">
+<p class="paragraph-regular">Locbit works wherever internet is unavailable — field operations, remote
+                  areas, protests, and privacy-critical environments.</p>
+</div>
+</div>
+<div class="use-case-right" style="filter:blur(7px);-webkit-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 25%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">
+<div class="_w-we-do-list-wrap">
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Emergency communications</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Remote area messaging</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg">Privacy-sensitive operations</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Offline team coordination</div>
+</div>
+<div class="_w-we-do-list"><svg class="use-case-arrow" fill="none" viewbox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12.9L10.1429 16.5L18 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-size-lg capitalize">Anti-surveillance environments</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape left"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="w-layout-grid source-grid" data-w-id="d9c32b84-6fa4-cbc6-692c-38fd4f9ab95c" style="opacity:0">
+<div class="source-left"><img alt="Stylized 3D logo with four rounded shapes in red-orange, purple-blue, and green on a black square background." class="source-image" loading="lazy" src="images/image-203-20-1-.webp"/></div>
+<div class="source-right">
+<h2 class="section-heading left">Try Locbit on your Android device</h2>
+<div class="spacing-6xl"></div>
+<p class="paragraph-regular">Locbit is available as an Android APK. Download it, install on any Android
+                device, and start communicating securely without any internet connection.</p>
+<div class="spacing-9xl"></div><a class="button-v2 w-inline-block" data-wf--primary-button-v2--variant="base" href="https://github.com/zulpikarsandira/locbit" target="_blank">
+<div class="button-text-pill">
+<div class="button-text">View on GitHub</div>
+<div class="button-text">View on GitHub</div>
+</div>
+<div class="button-arrow-pill-v2"><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="spacing-20xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="section-header">
+<div class="badge" data-w-id="84eb02ba-1de0-a50a-7879-3b38b0200492">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">FAQ</div>
+</div>
+<div class="spacing-2xl"></div>
+<div class="single-section-heading-wrap">
+<div class="wrap-heading-3d-front" sectionheading-3d="front-one">
+<h2 class="section-heading">You ask. We answer</h2>
+</div>
+<div class="wrap-heading-3d-back" sectionheading-3d="back-one">
+<h2 class="section-heading">You ask. We answer</h2>
+</div>
+</div>
+</div>
+<div class="spacing-20xl"></div>
+<div class="faq-main">
+<div class="faq-tab-main-v2 w-tabs" data-current="Tab 1" data-duration-in="300" data-duration-out="100" data-easing="ease">
+<div class="faq-tab-menu-v2 w-tab-menu"><a class="faq-tab-link-v2 w-inline-block w-tab-link w--current" data-w-tab="Tab 1">
+<div class="faq-item-v2">
+<div class="faq-top-v2">
+<div class="font-size-lg brand-color">(01)</div>
+<div class="font-size-lg capitalize">How does Locbit work without internet?</div><svg class="faq-arrow-v2" fill="none" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0002 5.33301V26.6663M26.6668 15.9997L5.3335 15.9997" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="faq-bottom">
+<div class="spacing-2xl"></div>
+<div class="max-width-23">
+<p class="paragraph-regular text-align-center">Locbit uses Bluetooth Low Energy (BLE) to detect
+                          nearby devices and establish a direct peer-to-peer connection for messaging.</p>
+</div>
+</div>
+</div>
+</a><a class="faq-tab-link-v2 w-inline-block w-tab-link" data-w-tab="Tab 2">
+<div class="faq-item-v2">
+<div class="faq-top-v2">
+<div class="font-size-lg brand-color">(02)</div>
+<div class="font-size-lg capitalize">Is my data secure?</div><svg class="faq-arrow-v2" fill="none" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0002 5.33301V26.6663M26.6668 15.9997L5.3335 15.9997" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="faq-bottom">
+<div class="spacing-2xl"></div>
+<div class="max-width-23">
+<p class="paragraph-regular text-align-center">Absolutely. Every message is encrypted using
+                          AES-256-GCM, and keys are exchanged securely via ECDH protocols.</p>
+</div>
+</div>
+</div>
+</a><a class="faq-tab-link-v2 w-inline-block w-tab-link" data-w-tab="Tab 3">
+<div class="faq-item-v2">
+<div class="faq-top-v2">
+<div class="font-size-lg brand-color">(03)</div>
+<div class="font-size-lg capitalize">Does it consume a lot of battery?</div><svg class="faq-arrow-v2" fill="none" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0002 5.33301V26.6663M26.6668 15.9997L5.3335 15.9997" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="faq-bottom">
+<div class="spacing-2xl"></div>
+<div class="max-width-23">
+<p class="paragraph-regular text-align-center">No. Locbit is specifically engineered using BLE
+                          (Low Energy) to ensure minimal battery impact even when active.</p>
+</div>
+</div>
+</div>
+</a><a class="faq-tab-link-v2 w-inline-block w-tab-link" data-w-tab="Tab 4">
+<div class="faq-item-v2">
+<div class="faq-top-v2">
+<div class="font-size-lg brand-color">(04)</div>
+<div class="font-size-lg capitalize">Where is my message history stored?</div><svg class="faq-arrow-v2" fill="none" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0002 5.33301V26.6663M26.6668 15.9997L5.3335 15.9997" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="faq-bottom">
+<div class="spacing-2xl"></div>
+<div class="max-width-23">
+<p class="paragraph-regular text-align-center">All messages are stored locally on your device in
+                          structured JSON format. We never use central servers.</p>
+</div>
+</div>
+</div>
+</a><a class="faq-tab-link-v2 w-inline-block w-tab-link" data-w-tab="Tab 5">
+<div class="faq-item-v2">
+<div class="faq-top-v2">
+<div class="font-size-lg brand-color">(05)</div>
+<div class="font-size-lg capitalize">Who developed Locbit?</div><svg class="faq-arrow-v2" fill="none" viewbox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0002 5.33301V26.6663M26.6668 15.9997L5.3335 15.9997" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="faq-bottom">
+<div class="spacing-2xl"></div>
+<div class="max-width-23">
+<p class="paragraph-regular text-align-center">Locbit is an open-source project developed by
+                          Zulpikar Sandira and Ijal Gesrek (Drekeken-Tech).</p>
+</div>
+</div>
+</div>
+</a></div>
+<div class="w-tab-content">
+<div class="w-tab-pane w--tab-active" data-w-tab="Tab 1"></div>
+<div class="w-tab-pane" data-w-tab="Tab 2"></div>
+<div class="w-tab-pane" data-w-tab="Tab 3"></div>
+<div class="w-tab-pane" data-w-tab="Tab 4"></div>
+<div class="w-tab-pane" data-w-tab="Tab 5"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-29xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape left"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="w-layout-grid overview-cta-grid">
+<div class="overview-cta-left" data-w-id="0f095c92-1427-f4b7-2e1f-950eeaf26f35" style="opacity:0"><img alt="Dark-themed website homepage for Locbit creative design agency showcasing portraits, service offerings, client logos, and branding messages." class="overview-cta-image" loading="lazy" src="images/slider-2011-20-5-.webp"/></div>
+<div class="overview-cta-right" data-w-id="89690941-553e-68b4-ef66-5583f8a49f71" style="opacity:0">
+<h2 class="section-heading left">Experience Secure Offline Chat Now</h2>
+<div class="spacing-6xl"></div>
+<p class="paragraph-regular">Take control of your privacy. Download Locbit and start messaging without
+                limits.</p>
+<div class="spacing-9xl"></div>
+<div class="primary-button-wrap"><a class="button-v2 w-inline-block" data-wf--primary-button-v2--variant="base" href="#" target="_blank">
+<div class="button-text-pill">
+<div class="button-text">Download App</div>
+<div class="button-text">Download App</div>
+</div>
+<div class="button-arrow-pill-v2"><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/></div>
+</a><a class="button-v2 w-inline-block" data-wf--primary-button-v2--variant="base" href="https://github.com/" target="_blank">
+<div class="button-text-pill">
+<div class="button-text">View Source</div>
+<div class="button-text">View Source</div>
+</div>
+<div class="button-arrow-pill-v2"><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/></div>
+</a></div>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="w-layout-blockcontainer container w-container">
+<div class="w-layout-grid want-more-grid" data-w-id="791bcfe0-c276-c992-a02e-2c21df5fd6b8" style="opacity:0">
+<div class="want-more-left">
+<div class="want-more-left">
+<div class="badge">
+<div class="badge-dot"></div>
+<div class="font-size-sm all-caps">Credits</div>
+</div>
+<div class="spacing-2xl"></div>
+<h2 class="section-heading left">Meet the Developers</h2>
+<div class="spacing-2xl"></div>
+<p class="paragraph-regular">Locbit is proudly developed by Zulpikar Sandira and Ijal Gesrek
+                  (Drekeken-Tech).</p>
+<div class="spacing-9xl"></div><a class="button-v2 w-inline-block" data-wf--primary-button-v2--variant="base" href="work.html">
+<div class="button-text-pill">
+<div class="button-text">Learn More</div>
+<div class="button-text">Learn More</div>
+</div>
+<div class="button-arrow-pill-v2"><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/><img alt="Two white arrowheads pointing left and right on a black background." class="button-arrow-v2" loading="lazy" src="images/frame-202147239481.webp"/></div>
+</a>
+</div>
+</div>
+<div class="want-more-right" data-w-id="791bcfe0-c276-c992-a02e-2c21df5fd6c1">
+<div class="marque-list-wrapper">
+<div class="about-hero-marque-list"><img alt="Website homepage with colorful gradient background, featuring text 'Creative Design Studio' and 'Design That Means Something' with a swirling colorful design element." class="about-marque-image" loading="lazy" src="images/contemplative-lighting-unpyl-1.webp"/><img alt="Smartphone displaying a banking app with account balance of $5300 and recent transactions, held by a hand." class="about-marque-image" loading="lazy" src="images/serene-introspection-ofi0h.webp"/><img alt="Person with short hair sitting cross-legged, illuminated by red and blue lighting creating a shadow on the wall." class="about-marque-image" loading="lazy" src="images/contemplative-lighting-unpyl.webp"/></div>
+<div class="about-hero-marque-list"><img alt="Person with short hair sitting cross-legged, illuminated by red and blue lighting creating a shadow on the wall." class="about-marque-image" loading="lazy" src="images/contemplative-lighting-unpyl.webp"/><img alt="Portrait of a woman in a red turtleneck sweater with her eyes closed, surrounded by colorful light streaks creating a blurred effect." class="about-marque-image" loading="lazy" src="images/serene-introspection-ofi0h-1.webp"/><img alt="Person with short hair sitting cross-legged, illuminated by red and blue lighting creating a shadow on the wall." class="about-marque-image" loading="lazy" src="images/contemplative-lighting-unpyl.webp"/></div>
+</div>
+<div class="about-marque-gradinet"></div>
+</div>
+</div>
+</div>
+<div class="spacing-28xl"></div>
+<div class="horizontal-iine-wrapper">
+<div class="horizontal-ine"></div>
+<div class="star-shape-wrape"><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg><svg class="star-shape" fill="none" viewbox="0 0 26 28" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7451 0C9.17647 10 3.05882 13.1667 0 13.5C8.97255 17.5 12.2353 24.8333 12.7451 28C12.7451 20 21.5817 15 26 13.5C16.2118 11.5 12.7451 4 12.7451 0Z" fill="currentColor"></path>
+</svg></div>
+</div>
+</section>
+</div>
+<section class="section">
+<div class="space-29xl"></div>
+<div class="footer-grid-v2" data-w-id="ff7f7a5f-f553-03ed-09ee-8189f7b5163d">
+<div class="footer-menu-main">
+<div class="footer-menu"><a class="footer-link w-inline-block" href="index.html">
+<div class="footer-link-text">Home</div>
+<div class="footer-link-text">Home</div>
+</a><a class="footer-link w-inline-block" href="about.html">
+<div class="footer-link-text">About</div>
+<div class="footer-link-text">About</div>
+</a><a class="footer-link w-inline-block" href="work.html">
+<div class="footer-link-text">Works</div>
+<div class="footer-link-text">Works</div>
+</a><a class="footer-link w-inline-block" href="service.html">
+<div class="footer-link-text">Services</div>
+<div class="footer-link-text">Services</div>
+</a><a class="footer-link w-inline-block" href="blog.html">
+<div class="footer-link-text">Blog</div>
+<div class="footer-link-text">Blog</div>
+</a><a class="footer-link w-inline-block" href="contact.html">
+<div class="footer-link-text">Contact</div>
+<div class="footer-link-text">Contact</div>
+</a></div>
+</div>
+<div class="footer-menu-main">
+<div class="footer-menu align-center center">
+<div class="social-link-wrap"><a class="footer-social-link w-inline-block" href="https://www.facebook.com/" target="_blank">
+<div class="social-text-pill">
+<div class="footer-link-text">Facebook</div>
+<div class="footer-link-text">Facebook</div>
+</div>
+<div class="social-arrow-pill"><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg></div>
+</a><a class="footer-social-link w-inline-block" href="https://www.linkedin.com/" target="_blank">
+<div class="social-text-pill">
+<div class="footer-link-text">Linkedin</div>
+<div class="footer-link-text">Linkedin</div>
+</div>
+<div class="social-arrow-pill"><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg></div>
+</a><a class="footer-social-link w-inline-block" href="https://www.instagram.com/" target="_blank">
+<div class="social-text-pill">
+<div class="footer-link-text">Instagram</div>
+<div class="footer-link-text">Instagram</div>
+</div>
+<div class="social-arrow-pill"><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg></div>
+</a><a class="footer-social-link w-inline-block" href="https://x.com/" target="_blank">
+<div class="social-text-pill">
+<div class="footer-link-text">X/Twitter</div>
+<div class="footer-link-text">X/Twitter</div>
+</div>
+<div class="social-arrow-pill"><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg></div>
+</a><a class="footer-social-link w-inline-block" href="https://www.behance.net/" target="_blank">
+<div class="social-text-pill">
+<div class="footer-link-text">Behance</div>
+<div class="footer-link-text">Behance</div>
+</div>
+<div class="social-arrow-pill"><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg></div>
+</a><a class="footer-social-link w-inline-block" href="https://dribbble.com/" target="_blank">
+<div class="social-text-pill">
+<div class="footer-link-text">Dribbble</div>
+<div class="footer-link-text">Dribbble</div>
+</div>
+<div class="social-arrow-pill"><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg><svg class="social-arrow" fill="none" viewbox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 12.75L12.75 0.75M12.75 0.75H3.75M12.75 0.75V9.75" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg></div>
+</a></div>
+</div>
+</div>
+<div class="footer-menu-main">
+<div class="footer-menu align-center right"><a class="footer-link w-inline-block" href="/admin/style-guide">
+<div class="footer-link-text">Styleguide</div>
+<div class="footer-link-text">Styleguide</div>
+</a><a class="footer-link w-inline-block" href="/admin/license">
+<div class="footer-link-text">Licensing</div>
+<div class="footer-link-text">Licensing</div>
+</a><a class="footer-link w-inline-block" href="/admin/changelog">
+<div class="footer-link-text">Change log</div>
+<div class="footer-link-text">Change log</div>
+</a><a class="footer-link w-inline-block" href="https://locbit1.webflow.io/404">
+<div class="footer-link-text">404</div>
+<div class="footer-link-text">404</div>
+</a></div>
+</div>
+</div>
+<div class="spacing-9xl"></div>
+<div class="copyright-block" data-w-id="ff7f7a5f-f553-03ed-09ee-8189f7b516bf">
+<div class="copyright-text">Developed by Zulpikar Sandira &amp; Ijal Gesrek. Powered by Webflow</div>
+<div class="copyright-text"><span class="copyright-icon">©</span> 2026 Locbit</div>
+</div>
+<div class="spacing-6xl"></div>
+<div class="footer-marque-main" data-w-id="ff7f7a5f-f553-03ed-09ee-8189f7b516cb">
+<div class="footer-marque-list">
+<div class="footer-marque-title">Locbit</div>
+<div class="footer-marque-title">Locbit</div>
+<div class="footer-marque-title">Locbit</div>
+</div>
+<div class="footer-marque-list">
+<div class="footer-marque-title">Locbit</div>
+<div class="footer-marque-title">Locbit</div>
+<div class="footer-marque-title">Locbit</div>
+</div>
+</div>
+</section>
+</div>
+<script src="js/jquery.js?site=6981bb947f995e0592acde81" type="text/javascript"></script>
+<script src="js/webflow.schunk.e0c428ff9737f919.js" type="text/javascript"></script>
+<script src="js/webflow.schunk.11ec06bb84b49211.js" type="text/javascript"></script>
+<script src="js/webflow-script.js" type="text/javascript"></script>
+<script src="js/gsap.min.js" type="text/javascript"></script>
+<script src="js/scrolltrigger.min.js" type="text/javascript"></script>
+<script src="js/splittext.min.js" type="text/javascript"></script>
+<script>
+    const lenis = new Lenis({
+      smooth: true,
+      lerp: 0.1,
+      wheelMultiplier: 1,
+      infinite: false
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+</body>
+</html>
