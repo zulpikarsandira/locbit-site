@@ -1,5 +1,6 @@
 1:
 <!DOCTYPE html>
+
 <!-- Handled by Exflow.site -->
 <html data-wf-page="698adc16be7db696ff725abc" data-wf-site="6981bb947f995e0592acde81" lang="en">
 <head>
@@ -27,7 +28,35 @@
     
     
     
-    </style>
+    
+    .nav-two-columns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .nav-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-vertical-divider {
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.4);
+      margin: 0 3rem;
+    }
+    /* Mobile Responsive styling */
+    @media (max-width: 767px) {
+      .nav-two-columns {
+        flex-direction: column;
+      }
+      .nav-vertical-divider {
+        width: 100%;
+        height: 1px;
+        margin: 1.5rem 0;
+      }
+    }
+</style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.gstatic.com" rel="preconnect"/>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -67,7 +96,7 @@
 <div class="nav-menu-overlay" data-w-id="4d76da2b-f6ff-035e-478c-eb83eb383a0b">
 <div class="container">
 <div class="nav-grid">
-<div class="nav-right"><a aria-current="page" class="nav-link-block w-inline-block w--current" href="index.html">
+<div class="nav-right" style="width: 100%;"><div class="nav-two-columns"><div class="nav-col nav-col-left"><a aria-current="page" class="nav-link-block w-inline-block w--current" href="index.html">
 <div class="nav-text-pill _01">
 <div class="nav-link-text">Overview</div>
 <div class="nav-link-text">Overview</div>
@@ -76,8 +105,7 @@
 <div class="nav-link-text">Overview</div>
 <div class="nav-link-text">Overview</div>
 </div>
-</a>
-<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="features.html">
+</a><div class="devider-line"></div><a class="nav-link-block w-inline-block" href="features.html">
 <div class="nav-text-pill _01">
 <div class="nav-link-text">Features</div>
 <div class="nav-link-text">Features</div>
@@ -86,8 +114,7 @@
 <div class="nav-link-text">Features</div>
 <div class="nav-link-text">Features</div>
 </div>
-</a>
-<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="security.html">
+</a><div class="devider-line"></div><a class="nav-link-block w-inline-block" href="security.html">
 <div class="nav-text-pill _02">
 <div class="nav-link-text">Security</div>
 <div class="nav-link-text">Security</div>
@@ -96,8 +123,7 @@
 <div class="nav-link-text">Security</div>
 <div class="nav-link-text">Security</div>
 </div>
-</a>
-<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="about.html">
+</a><div class="devider-line"></div><a class="nav-link-block w-inline-block" href="about.html">
 <div class="nav-text-pill _03">
 <div class="nav-link-text">About</div>
 <div class="nav-link-text">About</div>
@@ -106,8 +132,7 @@
 <div class="nav-link-text">About</div>
 <div class="nav-link-text">About</div>
 </div>
-</a>
-<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="work.html">
+</a></div><div class="nav-vertical-divider"></div><div class="nav-col nav-col-right"><a class="nav-link-block w-inline-block" href="work.html">
 <div class="nav-text-pill _04">
 <div class="nav-link-text">Credits</div>
 <div class="nav-link-text">Credits</div>
@@ -116,8 +141,7 @@
 <div class="nav-link-text">Credits</div>
 <div class="nav-link-text">Credits</div>
 </div>
-</a>
-<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="service.html">
+</a><div class="devider-line"></div><a class="nav-link-block w-inline-block" href="service.html">
 <div class="nav-text-pill _05">
 <div class="nav-link-text">Technology</div>
 <div class="nav-link-text">Technology</div>
@@ -126,8 +150,7 @@
 <div class="nav-link-text">Technology</div>
 <div class="nav-link-text">Technology</div>
 </div>
-</a>
-<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="blog.html">
+</a><div class="devider-line"></div><a class="nav-link-block w-inline-block" href="blog.html">
 <div class="nav-text-pill _06">
 <div class="nav-link-text">Updates</div>
 <div class="nav-link-text">Updates</div>
@@ -136,8 +159,7 @@
 <div class="nav-link-text">Updates</div>
 <div class="nav-link-text">Updates</div>
 </div>
-</a>
-<div class="devider-line"></div><a class="nav-link-block w-inline-block" href="contact.html">
+</a><div class="devider-line"></div><a class="nav-link-block w-inline-block" href="contact.html">
 <div class="nav-text-pill _07">
 <div class="nav-link-text">Contact</div>
 <div class="nav-link-text">Contact</div>
@@ -146,8 +168,7 @@
 <div class="nav-link-text">Contact</div>
 <div class="nav-link-text">Contact</div>
 </div>
-</a>
-</div>
+</a></div></div></div>
 </div>
 </div>
 </div>
